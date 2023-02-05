@@ -1,6 +1,6 @@
 <div align="center">  
     <img height="50"src="./src/assets/codux.svg">  
-    <h1 ><img height="24"src="./src/assets/blueprint.svg"> Blueprint Card Playground by Codux</h1>
+    <h1 ><img src="./src/assets/blueprint.svg"> Blueprint Card Playground by Codux</h1>
 </div>
 
 ### A Visual IDE for React Projects
