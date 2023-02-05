@@ -7,7 +7,6 @@ import styles from './gift-card.module.scss';
 export interface GiftCardProps {
     photoURL?: string;
     full?: boolean;
-    children?: React.ReactNode;
     className?: string;
 }
 
@@ -20,7 +19,6 @@ export interface GiftCardProps {
  */
 export const GiftCard = ({
     className,
-    children,
     photoURL = defaultPhotoURL,
     full = false,
 }: GiftCardProps) => {

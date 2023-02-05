@@ -10,7 +10,6 @@ export interface ProductItemProps {
     itemPrice?: number;
     itemDescription?: string;
     isFavorite?: boolean;
-    children?: React.ReactNode;
     className?: string;
 }
 
@@ -23,7 +22,6 @@ export interface ProductItemProps {
  */
 export const ProductItem = ({
     className,
-    children,
     itemPhotoURL = defaultItemPhoto,
     itemName = 'Peppermint Mocha',
     itemPrice = 18.0,
