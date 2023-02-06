@@ -14,6 +14,7 @@ import styles from './form-card.module.scss';
 export interface FormCardProps {
     formType?: 'signin' | 'contact' | 'signup';
     className?: string;
+    children?: React.ReactNode;
 }
 
 /**
@@ -23,7 +24,11 @@ export interface FormCardProps {
  * Use this demo to get a feel for how easy and fun it is to create and edit components in Codux using Blueprint.js, a 3rd party React-based UI toolkit.
  *
  */
-export const FormCard = ({ className, formType = 'signin' }: FormCardProps) => {
+export const FormCard = ({
+    className,
+    formType = 'signin',
+    children,
+}: FormCardProps) => {
     const submitCaption =
         formType === 'signin'
             ? 'Sign In'
@@ -65,6 +70,7 @@ export const FormCard = ({ className, formType = 'signin' }: FormCardProps) => {
             ) : (
                 <TextArea />
             )}
+            <div>{children}</div>
             <div className={classNames(styles.card, styles.submit)}>
                 {formType !== 'contact' ? 'Forgot your Password?' : <span />}
                 <Button

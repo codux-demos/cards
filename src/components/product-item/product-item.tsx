@@ -10,6 +10,7 @@ export interface ProductItemProps {
     itemPrice?: number;
     itemDescription?: string;
     isFavorite?: boolean;
+    children?: React.ReactNode;
     className?: string;
 }
 
@@ -27,6 +28,7 @@ export const ProductItem = ({
     itemPrice = 18.0,
     itemDescription = 'An espresso roast combined with steamed milk, sweet mocha sauce and peppermint-flavored syrup, topped with whipped cream.',
     isFavorite = false,
+    children,
 }: ProductItemProps) => {
     return (
         <Card
@@ -54,6 +56,7 @@ export const ProductItem = ({
                 <div className={styles.product_row}>
                     <p className={styles.product_desc}>{itemDescription}</p>
                 </div>
+                <div className={styles.product_row}>{children}</div>
                 <div className={styles.product_row}>
                     <button className={styles['btn-icon']} type="button">
                         <Icon

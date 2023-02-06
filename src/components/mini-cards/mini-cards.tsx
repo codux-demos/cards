@@ -18,6 +18,7 @@ export interface MiniCardsProps {
     intent?: 'primary' | 'success' | 'warning' | 'danger';
     calloutText?: string;
     className?: string;
+    children?: React.ReactNode;
 }
 
 /**
@@ -31,6 +32,7 @@ export const MiniCards = ({
     className,
     intent = 'primary',
     calloutText = 'Aliquam imperdiet lacus quam, imperdiet fermentum lectus pretium vitae. Curabitur quis porttitor lorem, sed porttitor erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam et blandit nisi. Curabitur iaculis vitae tellus sed hendrerit. Vestbulum fringilla massa in quam iaculis ullamcorper.',
+    children,
 }: MiniCardsProps) => {
     let calloutTitle: string, calloutIcon: IconName;
 
@@ -88,6 +90,7 @@ export const MiniCards = ({
                     {calloutText}
                 </p>
             </Callout>
+            {children}
         </Card>
     );
 };

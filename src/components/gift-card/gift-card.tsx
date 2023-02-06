@@ -8,6 +8,7 @@ export interface GiftCardProps {
     photoURL?: string;
     full?: boolean;
     className?: string;
+    children?: React.ReactNode;
 }
 
 /**
@@ -21,6 +22,7 @@ export const GiftCard = ({
     className,
     photoURL = defaultPhotoURL,
     full = false,
+    children,
 }: GiftCardProps) => {
     return (
         <Card
@@ -37,6 +39,7 @@ export const GiftCard = ({
                     sodales neque dolor vitae arcu. Nam euismod, neque quis
                     laoreet interdum. Sed magna est, dictum at faucibus.
                 </H5>
+                <div>{children}</div>
                 <div className={styles.promo}>
                     <H6 className={styles.email}>
                         EMAIL | <br /> INFO@MYSITE.COM
