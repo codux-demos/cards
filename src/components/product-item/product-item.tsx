@@ -1,8 +1,10 @@
 import type React from 'react';
 import { Elevation, Card, Icon } from '@blueprintjs/core';
 import classNames from 'classnames';
-import defaultItemPhoto from '../../assets/pprmint.png';
 import styles from './product-item.module.scss';
+
+const defaultItemPhoto =
+    'https://static.wixstatic.com/media/610b66_21681c5c778f447aad5de30969565c61~mv2.png'; // pprmint.png (446x610)
 
 export interface ProductItemProps {
     itemPhotoURL?: string;

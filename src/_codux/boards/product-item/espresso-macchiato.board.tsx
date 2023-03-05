@@ -1,6 +1,8 @@
 import { createBoard } from '@wixc3/react-board';
 import { ProductItem } from '../../../components/product-item/product-item';
-import itemPhoto from '../../../assets/macchiato.png';
+
+const itemPhoto =
+    'https://static.wixstatic.com/media/610b66_58b938ac4bc14e5a8c19a65b57d2162a~mv2.png'; // macchiato.png (530x620)
 
 export default createBoard({
     name: 'Esspresso Macchiato',

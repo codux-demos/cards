@@ -1,8 +1,10 @@
 import type React from 'react';
 import { Elevation, H1, H5, H6, Card } from '@blueprintjs/core';
 import classNames from 'classnames';
-import defaultPhotoURL from '../../assets/img-1.jpg';
 import styles from './gift-card.module.scss';
+
+const defaultPhotoURL =
+    'https://static.wixstatic.com/media/610b66_d0b7a2ef26934253bfb4830813411f02~mv2.jpg'; //img-1.jpg (800x776)
 
 export interface GiftCardProps {
     photoURL?: string;
