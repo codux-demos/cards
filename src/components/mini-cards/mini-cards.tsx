@@ -11,8 +11,10 @@ import {
     IconName,
 } from '@blueprintjs/core';
 import classNames from 'classnames';
-import logo from '../../assets/logo.svg';
 import styles from './mini-cards.module.scss';
+
+const logo =
+    'https://static.wixstatic.com/shapes/610b66_1b7705fd82034afaafdedcc636d8079f.svg'; // bp-logo.svg (256x298)
 
 export interface MiniCardsProps {
     intent?: 'primary' | 'success' | 'warning' | 'danger';

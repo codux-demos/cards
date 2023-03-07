@@ -8,8 +8,10 @@ import {
     InputGroup,
 } from '@blueprintjs/core';
 import classNames from 'classnames';
-import logoURL from '../../assets/logo.svg';
 import styles from './form-card.module.scss';
+
+const logo =
+    'https://static.wixstatic.com/shapes/610b66_1b7705fd82034afaafdedcc636d8079f.svg'; // bp-logo.svg (256x298)
 
 export interface FormCardProps {
     formType?: 'signin' | 'contact' | 'signup';
@@ -48,7 +50,7 @@ export const FormCard = ({
             elevation={Elevation.FOUR}
         >
             <div className={classNames(styles.card, styles.header)}>
-                <img className={styles.logo} src={logoURL} alt="" />
+                <img className={styles.logo} src={logo} alt="" />
                 <H1>{formTitle}</H1>
             </div>
             <InputGroup
