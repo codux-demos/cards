@@ -1,9 +1,9 @@
 import { GiftCard } from './components/gift-card/gift-card';
-import './App.css';
+import styles from './App.module.scss';
 
 function App() {
     return (
-        <div className="App">
+        <div className={styles.App}>
             <GiftCard />
             <GiftCard full />
         </div>

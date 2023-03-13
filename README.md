@@ -9,7 +9,9 @@ Codux is an all-in-one visual development environment. Whether you’re starting
 
 ### Take it for a Spin
 
-This repo showcases the variety of Card component examples, featuring content choices for images, headers, footers, and components from third-party library.
+This project showcases the variety of Card component examples, featuring content choices for images, headers, footers, and components from third-party library.
+
+This project was bootstrapped with [`Vite`](https://vitejs.dev).
 
 -   Learn how to edit, render and compose apps that make use of [@blueprintjs/core](https://blueprintjs.com/docs/#core) components.
 -   Create **`React`**-based components with **`TypeScript`**, **`SCSS`** and **`CSS Modules`** support.
