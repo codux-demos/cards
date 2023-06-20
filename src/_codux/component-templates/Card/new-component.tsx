@@ -11,7 +11,7 @@ export interface NewComponentProps {
 
 /**
  * This component was generated using Codux's built-in Card new component template.
- * For details on on how to create custom new component templates, see https://help.codux.com/kb/en/article/configuration-for-new-components-and-templates
+ * For details on on how to create custom new component templates, see https://help.codux.com/kb/en/article/kb16522
  */
 export const NewComponent = ({
     className,
