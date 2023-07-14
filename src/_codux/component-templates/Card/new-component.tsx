@@ -20,20 +20,11 @@ export const NewComponent = ({
     children,
 }: NewComponentProps) => {
     return (
-        <Card
-            className={classNames(styles.root, className)}
-            elevation={Elevation.TWO}
-            interactive
-        >
+        <Card className={classNames(styles.root, className)} elevation={Elevation.TWO} interactive>
             <H2>{title}</H2>
             <p>{description}</p>
             <div>{children}</div>
-            <Button
-                text="Button"
-                type="button"
-                intent="primary"
-                icon="arrow-right"
-            />
+            <Button text="Button" type="button" intent="primary" icon="arrow-right" />
         </Card>
     );
 };

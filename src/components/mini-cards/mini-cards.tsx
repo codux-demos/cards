@@ -13,8 +13,7 @@ import {
 import classNames from 'classnames';
 import styles from './mini-cards.module.scss';
 
-const logo =
-    'https://static.wixstatic.com/shapes/610b66_1b7705fd82034afaafdedcc636d8079f.svg'; // bp-logo.svg (256x298)
+const logo = 'https://static.wixstatic.com/shapes/610b66_1b7705fd82034afaafdedcc636d8079f.svg'; // bp-logo.svg (256x298)
 
 export interface MiniCardsProps {
     intent?: 'primary' | 'success' | 'warning' | 'danger';
@@ -66,21 +65,16 @@ export const MiniCards = ({
             <Card className={styles.card} elevation={Elevation.THREE}>
                 <Switch defaultChecked large />
                 <div>
-                    <H3 className={styles.title}>
-                        Enable Communication Limits
-                    </H3>
+                    <H3 className={styles.title}>Enable Communication Limits</H3>
                     <p className={`${styles.title} ${styles.sub}`}>
-                        Limits apply to Phone, FaceTime, Messages and iCloud
-                        contacts.{' '}
+                        Limits apply to Phone, FaceTime, Messages and iCloud contacts.{' '}
                     </p>
                 </div>
             </Card>
             <Card className={styles.card} elevation={Elevation.THREE}>
                 <Spinner intent={intent} size={33} />
                 <span />
-                <H3 className={styles.title}>
-                    Software Update Installation...
-                </H3>
+                <H3 className={styles.title}>Software Update Installation...</H3>
             </Card>
             <Card className={styles.card} elevation={Elevation.THREE}>
                 <ProgressBar animate={false} intent={intent} value={0.65} />
@@ -88,9 +82,7 @@ export const MiniCards = ({
                 <Button className={styles.btn} intent={intent} icon="cross" />
             </Card>
             <Callout title={calloutTitle} icon={calloutIcon} intent={intent}>
-                <p className={classNames(styles.title, styles.sub)}>
-                    {calloutText}
-                </p>
+                <p className={classNames(styles.title, styles.sub)}>{calloutText}</p>
             </Callout>
             {children}
         </Card>

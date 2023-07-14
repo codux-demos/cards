@@ -1,17 +1,9 @@
 import type React from 'react';
-import {
-    Elevation,
-    H1,
-    TextArea,
-    Button,
-    Card,
-    InputGroup,
-} from '@blueprintjs/core';
+import { Elevation, H1, TextArea, Button, Card, InputGroup } from '@blueprintjs/core';
 import classNames from 'classnames';
 import styles from './form-card.module.scss';
 
-const logo =
-    'https://static.wixstatic.com/shapes/610b66_1b7705fd82034afaafdedcc636d8079f.svg'; // bp-logo.svg (256x298)
+const logo = 'https://static.wixstatic.com/shapes/610b66_1b7705fd82034afaafdedcc636d8079f.svg'; // bp-logo.svg (256x298)
 
 export interface FormCardProps {
     formType?: 'signin' | 'contact' | 'signup';
@@ -26,23 +18,11 @@ export interface FormCardProps {
  * Use this demo to get a feel for how easy and fun it is to create and edit components in Codux using Blueprint.js, a 3rd party React-based UI toolkit.
  *
  */
-export const FormCard = ({
-    className,
-    formType = 'signin',
-    children,
-}: FormCardProps) => {
+export const FormCard = ({ className, formType = 'signin', children }: FormCardProps) => {
     const submitCaption =
-        formType === 'signin'
-            ? 'Sign In'
-            : formType === 'signup'
-            ? 'Sign Up'
-            : 'Send';
+        formType === 'signin' ? 'Sign In' : formType === 'signup' ? 'Sign Up' : 'Send';
     const formTitle =
-        formType === 'signin'
-            ? 'Sign In'
-            : formType === 'signup'
-            ? 'Sign Up'
-            : 'Contact Us';
+        formType === 'signin' ? 'Sign In' : formType === 'signup' ? 'Sign Up' : 'Contact Us';
 
     return (
         <Card
@@ -53,22 +33,10 @@ export const FormCard = ({
                 <img className={styles.logo} src={logo} alt="" />
                 <H1>{formTitle}</H1>
             </div>
-            <InputGroup
-                type="email"
-                fill
-                round
-                placeholder="Your Email"
-                id="email"
-            />
+            <InputGroup type="email" fill round placeholder="Your Email" id="email" />
 
             {formType !== 'contact' ? (
-                <InputGroup
-                    type="password"
-                    fill
-                    round
-                    placeholder="Password"
-                    id="pass"
-                />
+                <InputGroup type="password" fill round placeholder="Password" id="pass" />
             ) : (
                 <TextArea />
             )}

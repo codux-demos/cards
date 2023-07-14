@@ -13,6 +13,6 @@ This project showcases the variety of Card component examples, featuring content
 
 This project was bootstrapped with [`Vite`](https://vitejs.dev).
 
--   Learn how to edit, render and compose apps that make use of [@blueprintjs/core](https://blueprintjs.com/docs/#core) components.
--   Create **`React`**-based components with **`TypeScript`**, **`SCSS`** and **`CSS Modules`** support.
--   Visually edit in real-time and in an isolated environment.
+- Learn how to edit, render and compose apps that make use of [@blueprintjs/core](https://blueprintjs.com/docs/#core) components.
+- Create **`React`**-based components with **`TypeScript`**, **`SCSS`** and **`CSS Modules`** support.
+- Visually edit in real-time and in an isolated environment.

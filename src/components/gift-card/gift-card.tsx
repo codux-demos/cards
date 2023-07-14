@@ -37,9 +37,9 @@ export const GiftCard = ({
             <div className={styles['card-body']}>
                 <H1 className={styles.title}>LASHES & HAIR EXTENTIONS</H1>
                 <H5 className={styles.desc}>
-                    Donec faucibus, ante ut ultrices commodo, magna ex maximus,
-                    sodales neque dolor vitae arcu. Nam euismod, neque quis
-                    laoreet interdum. Sed magna est, dictum at faucibus.
+                    Donec faucibus, ante ut ultrices commodo, magna ex maximus, sodales neque dolor
+                    vitae arcu. Nam euismod, neque quis laoreet interdum. Sed magna est, dictum at
+                    faucibus.
                 </H5>
                 <div>{children}</div>
                 <div className={styles.promo}>

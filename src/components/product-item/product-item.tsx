@@ -33,10 +33,7 @@ export const ProductItem = ({
     children,
 }: ProductItemProps) => {
     return (
-        <Card
-            className={classNames(styles.product_wrapper, className)}
-            elevation={Elevation.FOUR}
-        >
+        <Card className={classNames(styles.product_wrapper, className)} elevation={Elevation.FOUR}>
             <img className={styles.product_image} src={itemPhotoURL} alt="" />
             <Card className={styles.product_body}>
                 <div className={styles.product_row}>
@@ -61,11 +58,7 @@ export const ProductItem = ({
                 <div className={styles.product_row}>{children}</div>
                 <div className={styles.product_row}>
                     <button className={styles['btn-icon']} type="button">
-                        <Icon
-                            icon="heart"
-                            color={isFavorite ? '#ff7979' : 'white'}
-                            size={20}
-                        />
+                        <Icon icon="heart" color={isFavorite ? '#ff7979' : 'white'} size={20} />
                     </button>
                     <button className={styles['btn-add']} type="button">
                         Add to cart
