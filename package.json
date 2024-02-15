@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@blueprintjs/core": "^5.9.0",
+    "@blueprintjs/core": "^5.9.1",
     "@blueprintjs/icons": "^5.7.1",
     "@codux-boards/react-blueprint": "^1.0.14",
     "classnames": "^2.5.1",
@@ -17,11 +17,11 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/react": "^18.2.50",
-    "@types/react-dom": "^18.2.18",
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
     "@vitejs/plugin-react": "^4.2.1",
     "@wixc3/react-board": "^2.4.0",
-    "prettier": "^3.2.4",
+    "prettier": "^3.2.5",
     "sass": "^1.70.0",
     "typescript": "~5.3.3",
     "vite": "^5.0.12",
