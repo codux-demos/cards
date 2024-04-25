@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@blueprintjs/core": "^5.10.1",
+    "@blueprintjs/core": "^5.10.2",
     "@blueprintjs/icons": "^5.9.0",
     "@codux-boards/react-blueprint": "^1.0.14",
     "classnames": "^2.5.1",
@@ -24,7 +24,7 @@
     "prettier": "^3.2.5",
     "sass": "^1.75.0",
     "typescript": "~5.4.5",
-    "vite": "^5.2.9",
+    "vite": "^5.2.10",
     "vite-plugin-svgr": "^4.2.0"
   }
 }
