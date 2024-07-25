@@ -6,7 +6,8 @@ export default createBoard({
     Board: () => <MiniCards intent="danger" />,
     environmentProps: {
         canvasWidth: 600,
-        windowHeight: 800,
+        windowHeight: 768,
+        windowWidth: 1024,
     },
     isSnippet: true,
 });

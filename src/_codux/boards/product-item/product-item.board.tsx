@@ -5,8 +5,8 @@ export default createBoard({
     name: 'Peppermint Mocha',
     Board: () => <ProductItem />,
     environmentProps: {
-        windowWidth: 600,
-        windowHeight: 800,
+        windowWidth: 1024,
+        windowHeight: 768,
     },
     isSnippet: true,
 });
