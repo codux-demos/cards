@@ -5,10 +5,8 @@ export default createBoard({
     name: 'Contact-Us Form',
     Board: () => <FormCard formType="contact" />,
     environmentProps: {
-        windowHeight: 1080,
-        windowWidth: 1920,
-        canvasWidth: 438,
-        canvasHeight: 40,
+        windowHeight: 600,
+        windowWidth: 800,
     },
     isSnippet: true,
 });
