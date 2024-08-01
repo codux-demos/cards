@@ -9,8 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@blueprintjs/core": "^5.10.5",
-    "@blueprintjs/icons": "^5.10.0",
+    "@blueprintjs/core": "^5.11.0",
+    "@blueprintjs/icons": "^5.11.0",
     "@codux-boards/react-blueprint": "^1.0.14",
     "classnames": "^2.5.1",
     "react": "^18.3.1",
@@ -20,11 +20,11 @@
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
-    "@wixc3/react-board": "^3.0.0",
+    "@wixc3/react-board": "^3.0.1",
     "prettier": "^3.3.3",
     "sass": "^1.77.8",
     "typescript": "~5.5.4",
-    "vite": "^5.3.4",
+    "vite": "^5.3.5",
     "vite-plugin-svgr": "^4.2.0"
   }
 }
